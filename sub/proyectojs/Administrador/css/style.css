@@ -1,0 +1,32 @@
+
+header div{
+	background: #333;
+}
+header h2{
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	float: left;
+	padding-left: 10%;
+}
+img{
+	height: 65px;
+	width: 65px;
+	float: left;
+	margin-left: 20px;
+}
+header h2:hover{
+	color: #00BCD4;
+}
+main h3{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.create a{
+
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+body{
+	background-image: url(../img/space2.png);
+}

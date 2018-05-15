@@ -1,0 +1,32 @@
+section{
+	margin-top: 10%;
+}
+body{
+	background-image: url(../img/fondo.png);
+	background-size: 100%;
+	background-position: center;
+}
+label{
+	color: #fff;
+}
+h1{
+	font-family: 'Press Start 2P', cursive;
+	color: #fff;
+	margin-bottom: 25px;
+}
+#divError{
+  background: rgba(192, 57, 43,0.5);
+  color: #fff;
+  font-size: 14px;
+
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.ocultar{
+  visibility: hidden;
+}
+.mostrar{
+  visibility: visible;
+}

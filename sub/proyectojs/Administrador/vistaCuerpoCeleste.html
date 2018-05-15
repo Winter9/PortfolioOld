@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/stylePrograma.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+  </head>
+  <body id="Celeste">
+
+    <header class="container-fluid">
+    <div class="row">
+      <h2 class="">MONKEY SPACE</h2>
+      <img src="img/mono.png">
+    </div>
+
+    </header>
+
+
+    <form class="container">
+    <h1>Registro de Cuerpos Celestes</h1>
+    <div>
+      <label for="txtCodigo">Codigo</label>
+      <input type="text" id="txtCodigo" required>
+    </div>
+
+    <div>
+
+      <select id="sltTipoCuerpo">
+        <option>-Tipo de Cuerpo Celeste-</option>
+        <option value="planeta">Planeta</option>
+          <option value="estrella">Estrella</option>
+          <option value="satelite">Satélite</option>
+      </select>
+    </div>
+
+    <div>
+
+      <input type="Number" placeholder="Cantidad de Satelites" id="txtInputPlaneta">
+
+      <input type="text" placeholder="Intensidad Luminosa" id="txtIntensidad">
+
+      <input type="text" placeholder="Tamaño de la estrella" id="txtTamannoEstrella">
+
+    </div>
+
+
+    <div>
+      <label for="txtNombre">Nombre del cuerpo celeste</label>
+      <input type="text" id="txtNombre" required>
+    </div>
+
+    <div>
+
+      <label for="txtMasa">Masa del cuerpo celeste</label>
+      <input type="text" id="txtMasa" required>
+    </div>
+
+    <div>
+      <label for="txtTemp">Temperatura</label>
+      <input type="Number" id="txtTemp" required>
+    </div>
+
+    <div>
+
+      <label for="txtDuracionDia">Duracion del Día</label>
+      <input type="text" id="txtDuracionDia">
+    </div>
+
+    <div>
+
+      <label for="txtComposicion">Composicion</label>
+      <input type="text" id="txtComposicion" required>
+    </div>
+
+
+    <div>
+
+      <p>
+      <label for="txtDistanciaSol">Distancia Media del Sol (en AU)</label>
+      <input type="Number" id="txtDistanciaSol" oninput="conversionDistancia(this.value)" onchange="conversionDistancia(this.value)" required> </p>
+      <p>KM: <span id="outputKM"></span></p>
+
+      <script>
+      function conversionDistancia(valorNum) {
+        document.getElementById("outputKM").innerHTML=valorNum*149597871;
+      }
+      </script>
+
+
+      <p>
+        <label for="txtDuracionAnno">Duracion del Año (en años terrestres)</label>
+        <input type="Number" id="txtDuracionAnno" oninput="conversionDias(this.value)" onchange="conversionDias(this.value)" required> </p>
+        <p>Días Terrestres: <span id="outputDias"></span></p>
+        <script>
+        function  conversionDias(valorNum2){
+          document.getElementById("outputDias").innerHTML=valorNum2*365;
+            }
+        </script>
+        </div>
+
+
+      <input type="submit" class="btn btn-primary" id="btnRegistrarCuerpoCeleste" value="Registrar">
+      <input type="button" class="btn btn-primary" value="Actualizar" id="btnActualizar">
+
+    </form>
+
+      <h1 class="container">Modificar y Eliminar</h1>
+
+    <table class="container"  id="tblTable">
+
+
+      <thead>
+
+      </thead>
+      <tbody>
+
+      </tbody>
+
+    </table>
+    <br>
+
+
+    <script src="js/lnCuerpoCeleste.js"></script>
+    <script src="js/iuCuerpoCeleste.js">
+
+    </script>
+  </body>
+</html>

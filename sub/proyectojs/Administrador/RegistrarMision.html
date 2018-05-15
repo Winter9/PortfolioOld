@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/stylePrograma.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body id="Mision">
+  <header class="container-fluid">
+    <div class="row">
+      <h2 class="">MONKEY SPACE</h2>
+      <img src="img/mono.png">
+    </div>
+    
+  </header>
+       
+    <form class="container" action="" onsubmit="return validarMision()">
+    <h1>Registro de Misión</h1>
+    <div>
+      <label for="txtCodigoM">Código</label>
+      <input type="text" id="txtCodigoM" required>
+    </div>
+    
+    <div>
+      <label for="txtNombreM">Nombre de Misión</label>
+      <input type="text" id="txtNombreM" required>
+    </div>
+    <div>
+      <label for="sltProgramas">Programa:</label>
+
+
+      <select id="sltProgramas">
+
+      </select>
+      </div>
+
+      <div>
+
+          <label for="txtFecha">Fecha de lanzamiento</label>
+      <input type="text" id="txtFecha" required>
+      </div>
+
+      <div>
+
+      <label for="txtEdad">Duración en tiempo</label>
+      <input type="text" id="txtDuracion" required>
+      </div>
+
+      <div>
+
+      <label for="txtDatos">Datos de interés</label>
+      <input type="text" id="txtDatos" required>
+      </div>
+      <div>
+
+      <label for="sltEstado">Estado:</label>
+      <select id="sltEstado">
+        <option value=""></option>
+        <option>fracasada</option>
+        <option>cancelada</option>
+        <option>pendiente</option>
+        <option>realizada</option>
+        
+      </select>
+      </div>
+
+      <div>
+
+      <label for="txtNave">Nave</label>
+      <input type="text" id="txtNave" required>
+      </div>
+
+      <div>
+      <label for="sltCuerposCelestes">Cuerpo Celeste:</label>
+      <input list="sltCuerposCelestes" id="txtCeleste">
+
+      <datalist id="sltCuerposCelestes">
+
+     
+      </datalist>
+      </div>
+      <div>
+
+      <label>Tripulates:</label>
+
+
+      <input list="sltAstronautas" id="txtAstronauta1">
+      <datalist id="sltAstronautas">
+        
+      </datalist>
+
+
+      <input list="sltAstronautas" id="txtAstronauta2">
+      <datalist id="sltAstronautas">
+        
+      </datalist>
+      <input list="sltAstronautas" id="txtAstronauta3">
+      <datalist id="sltAstronautas">
+        
+      </datalist>
+      <input list="sltAstronautas" id="txtAstronauta4">
+      <datalist id="sltAstronautas">
+        
+      </datalist>
+      </div>
+
+
+
+      <input type="submit" class="btn btn-primary" id="btnRegistrarMision" value="Registrar">
+      <input type="button" class="btn btn-primary" value="Actualizar" id="btnActualizar">
+
+    </form>
+    <br>
+    <br>
+        <h1 class="container">Modificar y Eliminar</h1>
+        <table class="container"  id="tblTable">
+            <thead>
+
+            </thead>
+            <tbody>
+              
+            </tbody>
+      
+      </table>
+    <script src="js/lnCrearPrograma.js"></script>
+    <script src="js/lnCuerpoCeleste.js"></script>
+    <script src="js/lnAstronautas.js"></script>
+    <script src="js/lnRegistroMision.js"></script>
+    <script src="js/iuRegistroMision.js">
+
+    </script>
+  </body>
+</html>

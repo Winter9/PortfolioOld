@@ -1,0 +1,160 @@
+header div{
+  background: #333;
+}
+header h2{
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  float: left;
+  padding-left: 10%;
+}
+img{
+  height: 65px;
+  width: 65px;
+  float: left;
+  margin-left: 20px;
+}
+header h2:hover{
+  color: #00BCD4;
+}
+input{
+  outline: none;
+}
+.error{
+  border: 2px solid rgba(230, 126, 34,1.0);
+}
+.ocultar{
+  display:none;
+}
+.mostrar{
+  display:block;
+}
+#btnActualizar{
+  margin-left: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #00BCD4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #666;
+  font-weight: bold;
+
+
+}
+table tr:hover{
+  background: #1abc9c;
+  color: #fff;
+
+}
+#tblMisiones td{
+  font-size: 12px;
+}
+
+/*Styles for forms*/
+#Programa body{
+  width: 100%;
+
+}
+
+#Programa div{
+  
+  margin-top: 10px;
+}
+.clearFix{
+  clear: both;
+}
+#btnRegistrar{
+  float: left;
+
+} 
+#Programa label{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  color: #555;
+}
+#Programa input:required{
+  width: 70%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+
+#Mision{
+    width: 100%;
+
+}
+#Mision div{
+    margin-top: 10px;
+
+}
+#btnRegistrarMision{
+  margin-top: 10px;
+
+
+} 
+#Mision label{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+  width: 100%;
+  margin-bottom: 5px;
+  color: #555;
+}
+#Mision input:required{
+  width: 50%;
+
+  margin-bottom: 10px;
+}
+
+
+
+#Celeste{
+    width: 100%;
+
+}
+#Celeste div{
+    margin-top: 10px;
+
+}
+#btnRegistrarCuerpoCeleste{
+  margin-top: 10px;
+
+
+} 
+#Celeste label{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+  width: 100%;
+  margin-bottom: 5px;
+  color: #555;
+}
+#Celeste input:required{
+  width: 50%;
+
+  margin-bottom: 10px;
+}
+#Celeste p{
+  font-size: 17px;
+}
+#btnRegistrarAstronauta{
+  margin-top: 10px;
+}

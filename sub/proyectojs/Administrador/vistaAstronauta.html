@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/stylePrograma.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  </head>
+  <body id="Mision">
+    <header class="container-fluid">
+    <div class="row">
+      <h2 class="">MONKEY SPACE</h2>
+      <img src="img/mono.png">
+    </div>
+    
+  </header>
+    
+    <form class="container">
+    <h1>Registro de Astronautas</h1>
+
+    <div>
+
+      <label for="txtCorreo">Correo Electronico</label>
+      <input type="text" id="txtCorreo" required>
+    </div>
+
+    <div>
+
+      <label for="txtCodigo">Codigo</label>
+      <input type="text" id="txtCodigo" placeholder="A000" maxlength="4" required>
+    </div>
+
+    <div>
+
+      <label for="txtIdentificacion">Identificacion</label>
+      <input type="text" id="txtIdentificacion" placeholder="123456789" maxlength="9" required>
+    </div>
+
+    <div>
+
+      <label for="txtNombre1">Primer Nombre</label>
+      <input type="text" id="txtNombre1" required>
+    </div>
+
+    <div>
+
+      <label for="txtNombre2">Segundo Nombre</label>
+      <input type="text" id="txtNombre2">
+    </div>
+    <div>
+
+      <label for="txtApellido1">Primer Apellido</label>
+      <input type="text" id="txtApellido1" required>
+    </div>
+
+    <div>
+
+      <label for="txtApellido2">Segundo Apellido</label>
+      <input type="text" id="txtApellido2">
+    </div>
+
+    <div>
+
+      <label for="txtEdad">Edad</label>
+      <input type="number" id="txtEdad" required>
+    </div>
+
+    <div>
+
+      <select id="sltGenero">
+        <option>-Genero-</option>
+        <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Indefinido">Indefinido</option>
+      </select>
+    </div>
+    <div>
+
+      <label for="txtNacionalidad">Nacionalidad</label>
+      <input type="text" id="txtNacionalidad" required>
+    </div>
+
+    <div>
+
+      <label for="txtContrasenna">Contraseña</label>
+      <input type="password" id="txtContrasenna" required>
+
+    </div>
+
+
+    <div>
+
+      <label for="txtConfirmacion">Confirmarcion de Contraseña</label>
+      <input type="password" id="txtConfirmacion" required>
+
+    </div>
+
+      <input type="submit" class="btn btn-primary" id="btnRegistrarAstronauta" value="Registrar">
+      <input type="button" class="btn btn-primary" value="Actualizar" id="btnActualizar">
+
+    </form>
+
+            <h1 class="container">Modificar y Eliminar</h1>
+        <table class="container"  id="tblTable">
+            <thead>
+
+            </thead>
+            <tbody>
+              
+            </tbody>
+      
+      </table>
+    <script src="js/lnAstronautas.js"></script>
+    <script src="js/iuAstronautas.js"></script>
+    <script src="../Login/js/lnLogin.js"></script>
+  </body>
+</html>

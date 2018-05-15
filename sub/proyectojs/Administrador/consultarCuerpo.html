@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/stylePrograma.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Cuerpos Celestes</title>
+</head>
+<body>
+ <h1>CUERPOS CELESTES</h1>
+    <select id="sltFiltroCuerpo" onchange="filtrarDatos()">
+        <option value="">-Seleccionar--</option>
+        <option value="planeta">Planeta</option>
+        <option value="estrella">Estrella</option>
+        <option value="satelite">Satelite</option>
+        
+    </select>
+
+
+    <table id="tblCuerpo">
+    	<thead>
+    	<th>Codigo</th>
+    	<th>Tipo de cuerpo</th>
+        <th>Cantidad de Satelites</th>
+        <th>Intensidad lumínica</th>
+        <th>Tamaño</th>
+    	<th>Nombre</th>
+    	<th>Masa</th>
+        <th>Temperatura</th>
+        <th>Duracion</th>
+        <th>Composicion</th>
+        <th>Distacia Media del sol</th>
+        <th>Duracion del año</th>
+  
+
+    
+    	</thead>
+    	<tbody>
+    		
+    	</tbody>
+    	
+    </table>
+
+
+<script src="js/lnCuerpoCeleste.js"></script>
+<script src="js/iuconsultarCuerpo.js"></script>
+</body>
+</html>

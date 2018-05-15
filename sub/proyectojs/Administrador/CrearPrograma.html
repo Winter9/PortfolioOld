@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/stylePrograma.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body id="Programa">
+  <header class="container-fluid">
+    <div class="row">
+      <h2 class="">MONKEY SPACE</h2>
+      <img src="img/mono.png">
+    </div>
+    
+  </header>
+
+    <form class="container" action="" onsubmit="return validar()">
+
+
+    <h1>Registrar Programa</h1>
+    <div>
+      <label for="txtCodigo">Código</label>
+      <input type="text" id="txtCodigo" required>
+    </div>
+    <div class="clearFix"></div>
+
+    <div>
+      <label for="txtNombre">Nombre del Programa</label>
+      <input type="text" id="txtNombre" required>
+    </div>
+    <div class="clearFix"></div>
+
+    <div>
+
+      <label for="txtInicio">Fecha de inicio</label>
+      <input type="text" id="txtInicio" placeholder="Mes/Año" required>
+    </div>
+    <div class="clearFix"></div>
+    <div>
+      <label for="txtFinal">Fecha de finalización</label>
+      <input type="text" id="txtFinal" placeholder="Mes/Año" required>
+    </div>
+    <div class="clearFix"></div>
+    
+    <div>
+      <label for="txtAlcance">Alcance</label>
+      <input type="text" id="txtAlcance" required>
+    </div>
+    <div class="clearFix"></div>
+
+
+
+      <input type="submit" class="btn btn-primary" value="Registrar" id="btnRegistrar">
+      <input type="button" class="btn btn-primary" value="Actualizar" id="btnActualizar">
+
+    </form>
+    <br>
+    <br>
+         <h1 class="container">Modificar y Eliminar</h1>
+
+    <table class="container"  id="tblTable">
+
+
+      <thead>
+
+      </thead>
+      <tbody>
+        
+      </tbody>
+      
+    </table>
+    <br>
+
+
+
+
+
+
+
+    <script src="js/lnCrearPrograma.js"></script>
+    <script src="js/lnRegistroMision.js"></script>
+    <script src="js/iuCrearPrograma.js"></script>
+
+
+  </body>
+</html>
